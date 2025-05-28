@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: var(--color-fundo);
+}
+
+.empresa{
+    display: flex;
+    align-items: center;
+}
+
+.empresa__nome{
+    color: var(--color-letra);
+}
+
+.empresa__logo{
+    width: 85px;
+    height: 84px;
+    flex-shrink: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}

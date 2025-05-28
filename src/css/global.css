@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Gothic&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --color-fundo:#F3FAFA;
+    --color-letra:#114F66;
+    --color-letraBranca:#FFFFFF;
+    --color-azulClaro:#D2E9F1;
+    --font-family: 'Jeju Gothic', sans-serif;
+    --Titulo-principal: 
+}
+
+body{
+    font-family: var(--font-family);
+}
+a{
+    text-decoration: none;
+    color: var(--color-letra);
+}
+
+.tituloPrincipal{
+    font-size: 110px;
+}
+.titulo{
+    font-size: 50px;
+}
+.titulo2{
+    font-size: 44px;
+}
+.paragrafo{
+    font-size: 36px;
+}
+.subtitulo, .legenda{
+    font-size: 32px;
+}
+.cabecalho{
+    font-size: 20px;
+}
+.tituloLogin{
+    font-size: 64px;
+}
