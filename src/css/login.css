@@ -1,0 +1,86 @@
+.cabecalho1{
+    position: fixed;
+    background: transparent;
+}
+.apresentacao{
+    display: flex;
+    
+    
+    background-image: linear-gradient(to right, rgba(0, 0,0, .3), rgba(0, 0, 0, .4)), url(../assets/Tela\ Login.png);
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.cabecalho1{
+    padding: 30px 40px;
+}
+
+.nomeEmpresa{
+    color: var(--color-branca);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mensagemPrincipal{
+    margin-top: 30.16vh;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.mensagemPrincipal__titulo{
+    color: var(--color-branca);
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mensagemPrincipal__texto{
+    margin-top: 1vw;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-branca);
+    width: 30vw;
+}
+
+.login{
+    background-color: var(--color-fundo);
+}
+.login2{
+    padding: 30px 40px;
+}
+.inputsLogin{
+    margin-top: 5.787vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.382vw;
+}
+.inputLogin{
+    text-align: center;
+    border-radius: 30px;
+    background: var(--color-azulClaro);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    width: 37.56vw;
+    height: 9.63vh;
+}
+.buttonLogin{
+    border-radius: 30px;
+    background: var(--color-letra);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 33.22vw;
+    height: 9.63vh;
+}
+
+.rodapeLogin{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13.15vh;
+    padding: 0px 6vw;
+}

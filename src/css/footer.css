@@ -1,0 +1,43 @@
+.footer{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-letra);
+    padding: 20px 40px;
+}
+.contatos__pricipais{
+    display: flex;
+    align-items: center;
+}
+.contatos__pricipais__iconesFooter{
+    width: 15%;
+}
+.contatos__pricipais__mensagem{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+
+.sobreNos h3{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.sobreNos__contato a{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    
+}
+.sobreNos__contato__imagemPessoal{
+    width: 70px;
+}

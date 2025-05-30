@@ -10,7 +10,8 @@
 :root{
     --color-fundo:#F3FAFA;
     --color-letra:#114F66;
-    --color-letraBranca:#FFFFFF;
+    --color-letraBranca:#1d1c1c;
+    --color-branca:#fff;
     --color-azulClaro:#D2E9F1;
     --font-family: 'Jeju Gothic', sans-serif;
     --Titulo-principal: 
@@ -25,23 +26,23 @@ a{
 }
 
 .tituloPrincipal{
-    font-size: 110px;
+    font-size: 6.37vw;
 }
 .titulo{
-    font-size: 50px;
+    font-size: 2.89vw;
 }
 .titulo2{
-    font-size: 44px;
+    font-size: 2.546vw;
 }
 .paragrafo{
-    font-size: 36px;
+    font-size: 2.083vw;
 }
 .subtitulo, .legenda{
-    font-size: 32px;
+    font-size: 1.852vw;
 }
 .cabecalho{
-    font-size: 20px;
+    font-size: 1.1574vw;
 }
 .tituloLogin{
-    font-size: 64px;
+    font-size: 3.704vw;
 }
