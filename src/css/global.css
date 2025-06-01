@@ -26,23 +26,26 @@ a{
 }
 
 .tituloPrincipal{
-    font-size: 6.37vw;
+    font-size: 6.37vw; /* 110px; */
 }
 .titulo{
-    font-size: 2.89vw;
+    font-size: 2.89vw;  /* 50px */
 }
 .titulo2{
-    font-size: 2.546vw;
+    font-size: 2.546vw;  /* 44px; */
+}
+.titulo3{
+    font-size: 2.315vw; ; /* 40px */
 }
 .paragrafo{
-    font-size: 2.083vw;
+    font-size: 2.083vw;  /* 36px; */
 }
 .subtitulo, .legenda{
-    font-size: 1.852vw;
+    font-size: 1.852vw;  /* 32px; */ 
 }
 .cabecalho{
-    font-size: 1.1574vw;
+    font-size: 1.1574vw; /* 20px; */
 }
 .tituloLogin{
-    font-size: 3.704vw;
+    font-size: 3.704vw; /* 64px; */
 }

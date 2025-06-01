@@ -1,0 +1,14 @@
+.homeInicial{
+    padding: 30px 40px;
+    background-image: url(../assets/TelaHome.png);
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.homeInicial__esquerda{
+    display: flex;
+    flex-direction: column;
+}
+.homeInicial__esquerda h1{
+   width: 47.05vw;
+}
