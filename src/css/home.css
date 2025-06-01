@@ -12,3 +12,11 @@
 .homeInicial__esquerda h1{
    width: 47.05vw;
 }
+.homeInicial__esquerda p{
+    width: 41.20vw;
+}
+
+.homeInicial__direita{
+    display: flex;
+    flex-direction: column;
+}
