@@ -1,0 +1,109 @@
+.infoProblema{
+    margin: 90px 40px;
+    color: var(--color-letra);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.infoProblema p{
+    margin-top: 30px;
+}
+.infoProblema h3{
+    margin-top: 50px;
+}
+.infoProblema h4{
+    margin-top: 40px;
+}
+
+.infoTecnologias{
+    margin: 90px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+.infoTecnologias h2{
+    color: var(--color-verdeTecnologias);
+}
+.infoTecnologias__tecnologia{
+    background-color: var(--color-azulClaro);
+    padding: 50px;
+    color: var(--color-letra);
+    border-bottom-left-radius: 80px ;
+}
+
+.infoObj{
+    margin: 90px 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 80px;
+    color: var(--color-letra);
+}
+.infoObj__esquerda{
+    width: 44.85vw;
+}
+.infoObj__esquerda p{
+    margin-top: 20px;
+}
+.infoObj__esquerda h2{
+    margin-top: 50px;
+}
+.infoObj__direita img{
+    width: 40.05vw;
+    display: flex;
+}
+
+.infoAlvo{
+    margin: 90px 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    color: var(--color-letra);
+}
+.infoAlvo__esquerda img{
+    width: 43.92vw;
+}
+.infoAlvo__direita{
+    width: 43.69vw;
+}
+.infoAlvo__direita p{
+    margin-top: 20px;
+}
+.infoAlvo__direita h4{
+    margin-top: 40px;
+}
+
+.infoBene{
+    margin: 90px 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    color: var(--color-letra);
+}
+.infoBene__esquerda p{
+    margin-top: 20px;
+}
+.infoBene__esquerda h3{
+    margin-top: 40px;
+}
+.infoBene__direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 140px;
+}
+.infoBene__direita img{
+    width: 43.658vw;
+}
+
+.infoSolu__mensagem{
+    margin: 90px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-letra);
+}
+.infoSolu__mensagem img{
+    width: 52.14vw;
+}
