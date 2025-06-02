@@ -1,3 +1,24 @@
+.infoPrincipal {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 3rem;
+    /* background-image: var(--gradient), url(../assets/banners/banner1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.infoPrincipal h1{
+    color: var(--color-azulClaro);
+}
+.infoPrincipal h2{
+    color: var(--color-branca);
+}
+
 .infoProblema{
     margin: 90px 40px;
     color: var(--color-letra);
