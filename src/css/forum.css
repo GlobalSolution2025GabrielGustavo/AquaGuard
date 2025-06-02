@@ -1,0 +1,32 @@
+.headerForum{
+    background-color: var(--color-letra);
+    color: var(--color-branca);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+.forumNav a{
+    color: var(--color-branca);
+    text-decoration: none;
+}
+
+.forum{
+    background-color: var(--color-azulClaro);
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.forum__mensagem{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-letraPreta);
+    gap: 40px;
+    padding: 30px;
+}
+.forum__mensagem a{
+    text-align: end;
+    text-decoration: none;
+    color: var(--color-letraPreta);
+}
