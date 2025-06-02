@@ -7,13 +7,24 @@
     <title>AquaGuard Informações</title>
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <div class="empresa">
+            <img class="empresa__logo" src="../assets/logoAquaGuard.png">
+            <h1 class="empresa__nome paragrafo">AquaGuard</h1>
+        </div>
+        <nav class="nav">
+            <!--arrumar classe dpois e href-->
+            <a class="#" href="./home.html">Inicio</a>
+            <a class="#" href="#info">O que é</a>
+            <a class="#" href="#contato">Contato</a>
+        </nav>
+    </header>
     <main>
         <section class="infoprincipal">
             <img src="../assets/Carrossel_1.png">
         </section>
         <img>
-        <section id="" class="infoProblema">
+        <section id="info" class="infoProblema">
             <h2 class="titulo">Você mora, trabalha ou administra um empreendimento em São Paulo? </h2>
             <p class="paragrafo">Saiba que as fortes chuvas e o risco de enchentes podem causar prejuízos incalculáveis – desde danos a bens materiais até interrupções nas atividades e ameaças à segurança das pessoas.</p>
             <h3 class="titulo2">Aqua Guard é a solução inteligente que antecipa o perigo:</h3>
@@ -91,6 +102,33 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="contato" class="footer">
+        <section class="contatos">
+            <article class="contatos__pricipais">
+                <img class="contatos__pricipais__iconesFooter" src="../assets/iconeMapFotter.png" alt="icone Mapa">
+                <h3 class="contatos__pricipais__mensagem">São Paulo, Brasil</h3>
+            </article>
+            <article class="contatos__pricipais">
+                <img class="contatos__pricipais__iconesFooter" src="../assets/iconeTelefoneFooter.png" alt="icone Telefone">
+                <h3 class="contatos__pricipais__mensagem">11 4002-8922</h3>
+            </article>
+            <article class="contatos__pricipais">
+                <img class="contatos__pricipais__iconesFooter" src="../assets/icobeEmailFooter.png" alt="icone Email">
+                <h3 class="contatos__pricipais__mensagem">suporte@aquaguard.com</h3>
+            </article>
+        </section>
+        <section class="sobreNos">
+            <h3>Sobre Nós:</h3>
+            <article class="sobreNos__contato">
+                <a href="https://github.com/gugasantos24">Gustavo Santos</a>
+                <img class="sobreNos__contato__imagemPessoal" src="https://avatars.githubusercontent.com/u/205759608?v=4" width="80px;" alt="Foto de Perfil do GitHub de Gustavo Santos"/>
+            </article>
+            <article class="sobreNos__contato">
+                <a href="https://github.com/Gakira06">Gabriel Akira</a>
+                <img class="sobreNos__contato__imagemPessoal" src="https://avatars.githubusercontent.com/u/203848085?v=4" width="80px;" alt="Foto de Perfil do GitHub de Gabriel Akira"/>
+            </article>
+        </section>
+    </footer>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
