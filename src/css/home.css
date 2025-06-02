@@ -3,7 +3,7 @@
     background-image: url(../assets/TelaHome.png);
     display: grid;
     grid-template-columns: 45% 55%;
-    height: 700px;
+    height: 40.5093vw;
 }
 
 .homeInicial__esquerda{
@@ -65,4 +65,25 @@
 }
 .homeServico__servicos__servico p{
     width: 17.36vw;
+}
+
+@media(width <= 1024px){
+    .homeInicial{
+        padding: 30px 40px;
+        background-image: url(../assets/TelaHome.png);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 50px;
+        align-items: center;
+    }
+    .homeServico__servicos{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+
 }

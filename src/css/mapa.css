@@ -77,5 +77,21 @@
     gap: 40px;
 }
 
+@media(width <= 1024px){
+    .mapa__form{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mapa__form__cabecalho,
+    .mapa__form__ruas__rua,
+    .mapa__form__ruas__numero,
+    .mapa__form__bairro,
+    .mapa__form__chuvas__umidade,
+    .mapa__form__chuvas__temperatura{
+        padding: 0.8vw;
+    }
+}
 
 

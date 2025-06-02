@@ -128,3 +128,14 @@
 .infoSolu__mensagem img{
     width: 52.14vw;
 }
+
+@media(width <= 1024px){
+    .infoTecnologias{
+        margin: 90px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    
+}
