@@ -9,39 +9,44 @@
 <body>
     <header></header>
     
-    <main>
-        <h1 class="titulo2">Mapa de Risco</h1>
-        <img src="../assets/Mapa de Alerta.png" alt="mapa de alerta">
-        <form id="">
-            <article class="">
-                <label class="cabecalho" for="usuario">Cpf</label>
-                <input type="text" id="" name="" required />
-            </article>
-            <div>
-                <article class="">
+    <main class="mapa">
+        <div class="mapa__principal">
+            <h1 class="titulo2">Mapa de Risco</h1>
+            <img src="../assets/Mapa de Alerta.png" alt="mapa de alerta">
+        </div>
+        <form class="mapa__form" id="">
+            <div class="mapa__form__procurar">
+                <article class="mapa__form__cabecalho">
+                    <label class="cabecalho" for="">Digite seu CEP:</label>
+                    <input type="text" id="" name="" required />
+                </article>
+                <button type="submit" id="">Procurar</button>
+            </div>
+            <div class="mapa__form__ruas">
+                <article class="mapa__form__ruas__rua">
                     <label class="cabecalho" for="">Rua</label>
                     <input type="" id="" name="" required />
                 </article>
-                <article class="">
+                <article class="mapa__form__ruas__numero">
                     <label class="cabecalho" for="">numero</label>
                     <input type="password" id="password" name="password" required />
                 </article>
             </div>
-            <article class="">
+            <article class="mapa__form__bairro">
                 <label class="cabecalho" for="">Bairro</label>
                 <input type="" id="" name="" required />
             </article>
-            <div>
-                <article class="">
+            <div class="mapa__form__chuvas">
+                <article class="mapa__form__chuvas__umidade">
                     <label class="cabecalho" for="">Umidade Relativa do Ar:</label>
                     <input type="" id="" name="" required />
                 </article>
-                <article class="">
+                <article class="mapa__form__chuvas__temperatura">
                     <label class="cabecalho" for="">Temperatura:</label>
                     <input type="" id="" name="" required />
                 </article>
             </div>
-            <button type="submit" id="">Procurar</button>
+            
                     
         </form>
     </main>
