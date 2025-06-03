@@ -1,0 +1,59 @@
+.matematicaTitulo{
+    text-align: center;
+    color: var(--color-letra);
+    margin-top: 40px;
+}
+.matematicaTitulo h2{
+    margin-top: 20px;
+}
+
+.matematicaProblema{
+    background-image: url('../assets/matematicaFundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-azulClaro);
+    padding: 3vw 40px;
+    text-indent: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.matematicaAquaGuard{
+    color: var(--color-letra);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 3vw 40px;
+    gap :20px;
+}
+.matematicaAquaGuard h2{
+    text-align: center;
+}
+.matematicaAquaGuard p{
+    text-indent: 3rem;
+}
+
+.matematicaPrototipo{
+    background-image: url(../assets/fundoArduinoVideo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding: 3vw 40px;
+    color: var(--color-branca);
+
+}
+.prototipoVideo{
+
+    margin-top: 30px;
+    width: 30vw;
+    size: cover;
+    position: center;
+    mask-repeat: no-repeat;
+}
