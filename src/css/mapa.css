@@ -46,6 +46,8 @@
 .mapa__form__bairro,
 .mapa__form__chuvas__umidade,
 .mapa__form__chuvas__temperatura{
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-azulClaro);
     border-radius: 30px;
     padding: 15px;
@@ -76,6 +78,11 @@
     display: flex;
     gap: 40px;
 }
+#map {
+    margin-top: 20px;
+    height: 30vw; /* ou qualquer altura adequada */
+    width: 40vw;
+}
 
 @media(width <= 1024px){
     .mapa__form{
@@ -91,6 +98,11 @@
     .mapa__form__chuvas__umidade,
     .mapa__form__chuvas__temperatura{
         padding: 0.8vw;
+    }
+    #map {
+        margin-top: 20px;
+        height: 40vw; /* ou qualquer altura adequada */
+        width: 50vw;
     }
 }
 

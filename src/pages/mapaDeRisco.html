@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin="" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -43,38 +50,38 @@
     <main class="mapa">
         <div class="mapa__principal" id="mapa">
             <h1 class="titulo2">Mapa de Risco</h1>
-            <img src="../assets/Mapa de Alerta.png" alt="mapa de alerta">
+            <div id="map"></div>
         </div>
         <form class="mapa__form" id="">
             <div class="mapa__form__procurar">
                 <article class="mapa__form__cabecalho">
-                    <label class="cabecalho" for="">Digite seu CEP:</label>
-                    <input type="text" id="" name="" required />
+                    <label class="cabecalho" for="cep">Digite seu CEP:</label>
+                    <input type="text" id="cep" name="cep"  />
                 </article>
-                <button type="submit" id="">Procurar</button>
+                <button type="button" onclick="consultaCEP()">Procurar</button>
             </div>
             <div class="mapa__form__ruas">
                 <article class="mapa__form__ruas__rua">
                     <label class="cabecalho" for="">Rua</label>
-                    <input type="" id="" name="" required />
+                    <input type="text" id="logradouro" name=""  />
                 </article>
                 <article class="mapa__form__ruas__numero">
-                    <label class="cabecalho" for="">numero</label>
-                    <input type="password" id="password" name="password" required />
+                    <label class="cabecalho" for="">Estado</label>
+                    <input type="text" id="localidade" name="" />
                 </article>
             </div>
             <article class="mapa__form__bairro">
                 <label class="cabecalho" for="">Bairro</label>
-                <input type="" id="" name="" required />
+                <input type="text" id="bairro" name=""  />
             </article>
             <div class="mapa__form__chuvas">
                 <article class="mapa__form__chuvas__umidade">
                     <label class="cabecalho" for="">Umidade Relativa do Ar:</label>
-                    <input type="" id="" name="" required />
+                    <input type="text" id="" name=""  />
                 </article>
                 <article class="mapa__form__chuvas__temperatura">
                     <label class="cabecalho" for="">Temperatura:</label>
-                    <input type="" id="" name="" required />
+                    <input type="text" id="" name="" />
                 </article>
             </div>
             
@@ -111,6 +118,7 @@
             </div>
         </section>
     </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="../js/scripts.js"></script>
 </body>
 </html>

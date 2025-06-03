@@ -6,25 +6,27 @@ if (loginBtn) {
     });
 }
 
-
 // Declaração de variáveis com DOM
 const headerMenu = document.querySelector(".nav");
 const sanduiche = document.querySelector(".sanduiche"); // Seleciona a primeira instância da classe sanduiche no html e retorna o objeto
 
 // Criando function
-
 function toggleMenu() {
     // Ele adiciona a classe 'active' caso o elemento exista, se não ele remove.
     sanduiche.classList.toggle('active');
     headerMenu.classList.toggle('active');
 }
+
 // Criar evento, que ao clicar executa a function
 sanduiche.addEventListener('click', toggleMenu);
 
+// Fecha o menu hambúrguer ao clicar em qualquer <a> dentro do nav
 headerMenu.addEventListener('click', (event) => {
-    // Verifica qual classe que recebe esse nome
-    if (event.target.classList.contains('item-menu')) {
-        toggleMenu();
+    if (event.target.tagName === 'A') {
+        // Se o menu estiver aberto, fecha
+        if (sanduiche.classList.contains('active') && headerMenu.classList.contains('active')) {
+            toggleMenu();
+        }
     }
 });
 
@@ -68,3 +70,68 @@ slideshow();
 function trocar(cor){
     document.body.style.background=cor;
 }
+
+
+
+//API
+// ...existing code...
+
+// Inicializa o mapa Leaflet
+let map
+function initMap() {
+    const defaultLatLng = [-23.55052, -46.633308]; // São Paulo como padrão
+    map = L.map('map').setView(defaultLatLng, 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+}
+
+// Aguarda o carregamento do DOM e da biblioteca Leaflet
+document.addEventListener('DOMContentLoaded', function () {
+    if (typeof L !== 'undefined' && document.getElementById('map')) {
+        initMap();
+    }
+});
+
+let marker; // Para guardar o marcador atual
+
+function consultaCEP() {
+    let cep = document.getElementById("cep").value;
+    let url = 'https://viacep.com.br/ws/' + cep + '/json/';
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('logradouro').value = data.logradouro || '';
+            document.getElementById('bairro').value = data.bairro || '';
+            document.getElementById('localidade').value = data.localidade || '';
+
+            // Monta o endereço para geocodificação
+            const endereco = `${data.logradouro}, ${data.bairro}, ${data.localidade}, Brasil`;
+            // Chama o Nominatim para pegar lat/lng
+            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(endereco)}`)
+                .then(res => res.json())
+                .then(locData => {
+                    if (locData && locData.length > 0) {
+                        const lat = locData[0].lat;
+                        const lon = locData[0].lon;
+                        // Move o mapa e adiciona marcador
+                        map.setView([lat, lon], 16);
+                        if (marker) {
+                            map.removeLayer(marker);
+                        }
+                        marker = L.marker([lat, lon]).addTo(map)
+                            .bindPopup(endereco)
+                            .openPopup();
+                    } else {
+                        alert('Localização não encontrada no mapa.');
+                    }
+                });
+        })
+        .catch(error => {
+            console.log(error);
+            alert('Erro ao buscar o CEP.');
+        });
+}
+// ...existing code...
+
+
