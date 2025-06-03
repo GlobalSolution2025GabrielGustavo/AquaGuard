@@ -5,8 +5,13 @@
     justify-content: space-between;
     padding: 30px 40px;
 }
+.forumNav{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
 .forumNav a{
-    color: var(--color-branca);
+    color: var(--color-letraPreta);
     text-decoration: none;
 }
 

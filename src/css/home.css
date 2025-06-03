@@ -3,7 +3,7 @@
     background-image: url(../assets/TelaHome.png);
     display: grid;
     grid-template-columns: 45% 55%;
-    height: 40.5093vw;
+    height: 700px;
 }
 
 .homeInicial__esquerda{

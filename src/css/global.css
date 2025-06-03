@@ -26,7 +26,11 @@ a{
     text-decoration: none;
     color: var(--color-letra);
 }
-
+li{
+    text-decoration: none;
+    display: flex;
+    
+}
 .tituloPrincipal{
     font-size: 6.37vw; /* 110px; */
 }

@@ -62,3 +62,9 @@ function slideshow() {
     setTimeout(slideshow, tempo);
 }
 slideshow();
+
+
+//trocar a cor
+function trocar(cor){
+    document.body.style.background=cor;
+}

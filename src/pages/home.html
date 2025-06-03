@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>AquaGuard</title>
 </head>
 <body>
@@ -12,12 +19,19 @@
             <img class="empresa__logo" src="../assets/logoAquaGuard.png">
             <h1 class="empresa__nome paragrafo">AquaGuard</h1>
         </div>
-        <nav class="nav">
-            <!--arrumar classe dpois e href-->
-            <a class="#" href="#inicio">Inicio</a>
-            <a class="#" href="#servicos">Serviços</a>
-            <a class="#" href="#contato">Contato</a>
+        <div class="pinceis">
+            <i class="fa-solid fa-paint-roller pincel" style="color: #bae2e2;" onclick="trocar('#fff')"></i>
+            <i class="fa-solid fa-paint-roller pincel" style="color: #1a1f26;" onclick="trocar('#1a1f26')"></i>
+            <i class="fa-solid fa-paint-roller pincel" style="color: #d1ba69;" onclick="trocar('#d1ba69')"></i>
+        </div>
+        <nav >
+            <ul class="nav">
+                <li><a class="#" href="#inicio">Inicio</a></li>
+                <li><a class="#" href="#servicos">Serviços</a></li>
+                <li><a class="#" href="#contato">Contato</a></li>
+            </ul>
         </nav>
+        
         <!-- Botão sanduíche -->
         <div class="sanduiche">
             <span class="barra"></span>
