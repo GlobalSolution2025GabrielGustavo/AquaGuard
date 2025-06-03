@@ -105,16 +105,15 @@ function consultaCEP() {
             document.getElementById('bairro').value = data.bairro || '';
             document.getElementById('localidade').value = data.localidade || '';
 
-            // Monta o endereço para geocodificação
             const endereco = `${data.logradouro}, ${data.bairro}, ${data.localidade}, Brasil`;
-            // Chama o Nominatim para pegar lat/lng
+
             fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(endereco)}`)
                 .then(res => res.json())
                 .then(locData => {
                     if (locData && locData.length > 0) {
-                        const lat = locData[0].lat;
-                        const lon = locData[0].lon;
-                        // Move o mapa e adiciona marcador
+                        const lat = parseFloat(locData[0].lat);
+                        const lon = parseFloat(locData[0].lon);
+
                         map.setView([lat, lon], 16);
                         if (marker) {
                             map.removeLayer(marker);
@@ -122,6 +121,22 @@ function consultaCEP() {
                         marker = L.marker([lat, lon]).addTo(map)
                             .bindPopup(endereco)
                             .openPopup();
+
+                        // Consulta a OpenWeatherMap com sua chave
+                        const apiKey = '4deef3e3d137a477682f5b07d9ba19d0';
+                        const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=pt_br`;
+                        console.log("Consultando clima em:", lat, lon);
+                        console.log("URL:", weatherUrl);
+                        fetch(weatherUrl)
+                            .then(res => res.json())
+                            .then(weather => {
+                                document.getElementById('temperatura').value = weather.main.temp + ' °C';
+                                document.getElementById('umidade').value = weather.main.humidity + ' %';
+                            })
+                            .catch(err => {
+                                console.error('Erro ao buscar dados meteorológicos:', err);
+                                alert('Não foi possível obter os dados climáticos.');
+                            });
                     } else {
                         alert('Localização não encontrada no mapa.');
                     }
