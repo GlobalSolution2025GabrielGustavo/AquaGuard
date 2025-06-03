@@ -38,7 +38,7 @@
 .mapa__form__procurar button{
     background-color: var(--color-letra);
     border-radius: 15px;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
 }
 
 .mapa__form__ruas__rua,
@@ -55,14 +55,17 @@
 
 .mapa__form__ruas__rua{
     width: 34.954vw;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .mapa__form__ruas__numero{
     width: 8.7384vw;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .mapa__form__bairro,
 .mapa__form__chuvas__umidade,
 .mapa__form__chuvas__temperatura{
     width: 16.088vw;;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .mapa__form__cabecalho input,
@@ -72,6 +75,7 @@
     background-color: transparent;
     text-decoration: none;
     border: 0;
+    
 }
 .mapa__form__ruas, 
 .mapa__form__chuvas{
@@ -82,6 +86,7 @@
     margin-top: 20px;
     height: 30vw; /* ou qualquer altura adequada */
     width: 40vw;
+    border: 1px solid var(--color-letra);
 }
 
 @media(width <= 1024px){

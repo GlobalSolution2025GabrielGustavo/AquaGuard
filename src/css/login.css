@@ -84,3 +84,26 @@
     margin-top: 13.15vh;
     padding: 0px 6vw;
 }
+
+/* .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.inputLogin {
+    transition: border 0.3s ease;
+} */
+
+@media(width <= 1024px){
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .apresentacao{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}

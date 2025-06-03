@@ -30,7 +30,7 @@
     width: 47.05vw;
     color: var(--color-letra);
 }
-.homeInicial__direita button{
+.homeInicial__direita a{
     background-color: var(--color-letra);
     border-radius: 30px;
     padding: 16px 13px ;
