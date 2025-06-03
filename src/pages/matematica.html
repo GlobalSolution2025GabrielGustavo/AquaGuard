@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>AquaGuard Informações</title>
+</head>
+<body>
+    <header class="header">
+        <div class="empresa">
+            <img class="empresa__logo" src="../assets/logoAquaGuard.png">
+            <h1 class="empresa__nome paragrafo">AquaGuard</h1>
+        </div>
+        <div class="pinceis">
+            <i class="fa-solid fa-paint-roller pincel" style="color: #bae2e2;" onclick="trocar('#fff')"></i>
+            <i class="fa-solid fa-paint-roller pincel" style="color: #1a1f26;" onclick="trocar('#1a1f26')"></i>
+            <i class="fa-solid fa-paint-roller pincel" style="color: #d1ba69;" onclick="trocar('#d1ba69')"></i>
+        </div>
+        <nav>
+            <!--arrumar classe dpois e href-->
+            <ul class="nav">
+                <li><a class="#" href="../../home.html">Inicio</a></li>
+                <li><a class="#" href="#info">O que é</a></li>
+                <li><a class="#" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botão sanduíche -->
+        <div class="sanduiche">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+        </div>
+
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer id="contato" class="footer">
+        <section class="contatos">
+            <article class="contatos__pricipais">
+                <img class="contatos__pricipais__iconesFooter" src="../assets/iconeMapFotter.png" alt="icone Mapa">
+                <h3 class="contatos__pricipais__mensagem">São Paulo, Brasil</h3>
+            </article>
+            <article class="contatos__pricipais">
+                <img class="contatos__pricipais__iconesFooter" src="../assets/iconeTelefoneFooter.png" alt="icone Telefone">
+                <h3 class="contatos__pricipais__mensagem">11 4002-8922</h3>
+            </article>
+            <article class="contatos__pricipais">
+                <img class="contatos__pricipais__iconesFooter" src="../assets/icobeEmailFooter.png" alt="icone Email">
+                <h3 class="contatos__pricipais__mensagem">suporte@aquaguard.com</h3>
+            </article>
+        </section>
+        <section class="sobreNos">
+            <h3>Sobre Nós:</h3>
+            <div class="sobreNos__contatos">
+                <article class="sobreNos__contato">
+                    <a href="https://github.com/gugasantos24">Gustavo Santos</a>
+                    <img class="sobreNos__contato__imagemPessoal" src="https://avatars.githubusercontent.com/u/205759608?v=4" width="80px;" alt="Foto de Perfil do GitHub de Gustavo Santos"/>
+                </article>
+                <article class="sobreNos__contato">
+                    <a href="https://github.com/Gakira06">Gabriel Akira</a>
+                    <img class="sobreNos__contato__imagemPessoal" src="https://avatars.githubusercontent.com/u/203848085?v=4" width="80px;" alt="Foto de Perfil do GitHub de Gabriel Akira"/>
+                </article>
+            </div>
+        </section>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
