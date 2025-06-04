@@ -41,7 +41,7 @@
 .sanduiche {
     cursor: pointer;
     position: relative;
-    z-index: 2;
+    z-index: 1000;
     display: none;
 }
 
@@ -76,7 +76,7 @@
         width: 100%;
         height: 100dvh;
         background-color: var(--color-fundo);
-        position: absolute;
+        position: fixed;
         z-index: 1;
         top: 0;
         right: -100%;
@@ -86,9 +86,10 @@
         align-items: center;
         justify-content: center;
         transition: var(--transition);
+        z-index: 1000;
     }
-    .active {
-        right: 0;   
+    .nav.active {
+        right: 0;
     }
     /* Pseudoclasse: classes que manipulam a classe priniciapal */
     /* FirstChild: Corresponde ao primeiro elemento (filho) da html */

@@ -57,3 +57,183 @@
     position: center;
     mask-repeat: no-repeat;
 }
+
+.matematicaTabela{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.matTabelas{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.nomeTab{
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid var(--color-letraPreta);
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: var(--color-letra);
+    
+}
+td {
+    background-color: var(--color-fundo);
+}
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*Gerar gráfico*/
+.container {
+  padding: 40px;
+  margin: 40px;
+  background-color: var(--color-branca);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h1, h2, h3 {
+  color: #2c3e50;
+}
+
+.matematicaSubtitulo {
+  border-bottom: 2px solid var(--color-letra);
+  padding-bottom: 10px;
+}
+.container p{
+    padding: 20px;
+    color: var(--color-letra);
+}
+
+.chart-container {
+  height: 600px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.controls {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--color-letra);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.result-card {
+  background-color: var(--color-branca);
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.risk-day {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.max-point {
+  color: #9b59b6;
+  font-weight: bold;
+}
+
+.domain-range {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.real-data {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.model-data {
+  color: #9b59b6;
+  font-weight: bold;
+}
+
+.comparison {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.referenciasMatematica{
+    color: var(--color-letra);
+}
+
+
+.explicacaoPolinomio{
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.explicacaoPolinomio h4, h2, h3{
+    color: var(--color-letra);
+}
+.formulaPolinomio{
+    
+    margin-top: 40px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.formula{
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: var(--color-letraPreta);
+    background-color: var(--color-azulClaro);
+}
+.matematicaMensagemFinal{
+    text-align: center;
+    padding: 40px;
+}
