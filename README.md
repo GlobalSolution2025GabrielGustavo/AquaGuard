@@ -246,22 +246,13 @@ async function consultaCEP() {
 
 ## 🤝 Equipe de Desenvolvimento
 
-<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+[<img src="https://avatars.githubusercontent.com/u/203848085?v=4" width="80px;" alt="Foto de Perfil do GitHub de Gabriel Akira"/><br /><sub>**Gabriel Akira**</sub>](https://github.com/Gakira06)
 
-<img src="https://avatars.githubusercontent.com/u/203848085?v=4" width="120px;" alt="Gabriel Akira"/>
-<br/>
-**Gabriel Akira Borges**  
-RM: 565191  
-[GitHub - Gakira06](https://github.com/Gakira06)
+Gabriel Akira Borges - RM: 565191
 
-<img src="https://avatars.githubusercontent.com/u/205759608?v=4" width="120px;" alt="Gustavo Santos"/>
-<br/>
-**Gustavo Francisco Santos**  
-RM: 561820  
-[GitHub - gugasantos24](https://github.com/gugasantos24)
+[<img src="https://avatars.githubusercontent.com/u/205759608?v=4" width="80px;" alt="Foto de Perfil do GitHub de Gustavo Santos"/><br /><sub>**Gustavo Santos**</sub>](https://github.com/gugasantos24)
 
-</div>
-
+Gustavo Francisco Santos - RM: 561820
 ---
 
 ## 📬 Contato
