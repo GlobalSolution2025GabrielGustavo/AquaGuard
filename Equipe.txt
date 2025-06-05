@@ -6,6 +6,11 @@ link do Repositório do GitHub: https://github.com/GlobalSolution2025GabrielGust
 
 
 Comentários importantes:
+
+Login:
+Username: admin
+password: 123456
+
 pages/matematica.html; js/matematica.js; css/matematica.css; Fazem parte da máteria de Differentiated Problem Solving
 
 SlideShow se encontra em pages/informacoes.html
