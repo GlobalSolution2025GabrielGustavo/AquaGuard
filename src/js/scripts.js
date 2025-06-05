@@ -132,7 +132,7 @@ function consultaCEP() {
                                 alert('Não foi possível obter os dados climáticos.');
                             });
                     } else {
-                        alert('Localização não encontrada no mapa.');
+                        alert('Localização não encontrada no mapa. Alguns CEPs podem não ter correspondência exata na API.');
                     }
                 });
         })

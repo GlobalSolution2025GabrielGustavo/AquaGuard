@@ -9,7 +9,7 @@ document.querySelector('.quiz__form').addEventListener('submit', function (event
     inputs.forEach(input => {
       if (input.value.trim() === '') {
         formularioValido = false;
-        input.style.border = '2px solid red'; // Destaca campos vazios
+        input.style.border = '2px solid red '; // Destaca campos vazios
       } else {
         input.style.border = ''; // Limpa o estilo se preenchido
       }

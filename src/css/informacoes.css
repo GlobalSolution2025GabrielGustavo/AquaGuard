@@ -20,7 +20,8 @@
 }
 
 .infoProblema{
-    margin: 90px 40px;
+    margin-top: 40px;
+    padding: 40px;
     color: var(--color-letra);
     display: flex;
     flex-direction: column;
@@ -37,7 +38,8 @@
 }
 
 .infoTecnologias{
-    margin: 90px 40px;
+    margin-top:40px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     gap: 100px;
@@ -54,10 +56,11 @@
 }
 
 .infoObj{
-    margin: 90px 40px;
+    margin-top:40px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 80px;
+    gap: 40px;
     color: var(--color-letra);
 }
 .infoObj__esquerda{
@@ -75,7 +78,8 @@
 }
 
 .infoAlvo{
-    margin: 90px 40px;
+    margin-top:40px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 40px;
@@ -95,7 +99,8 @@
 }
 
 .infoBene{
-    margin: 90px 40px;
+    margin-top:40px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 40px;
@@ -130,12 +135,47 @@
 }
 
 @media(width <= 1024px){
+    .mainInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     .infoTecnologias{
         margin: 90px 40px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-
+        padding: 40px;
     }
-    
+    .infoObj{
+        margin: 20px 40px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        color: var(--color-letra);
+    }
+    .infoAlvo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .infoBene{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px
+    }
+    .infoBene__direita{
+        gap: 30px;
+    }
+    .infoSolu__mensagem{
+    margin: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: var(--color-letra);
+    }
 }
