@@ -34,3 +34,14 @@ opacity: 1;
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
     background-color: #1c6f8d;
 }
+
+.forum__mensagem a:hover {
+    text-decoration: underline;
+    color: var(--color-letra);
+}
+#esqueceuSenha:hover{
+    color: red;
+}
+#novoUsuario:hover{
+    color: red;
+}

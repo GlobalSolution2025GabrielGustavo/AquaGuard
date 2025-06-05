@@ -94,6 +94,12 @@
 .inputLogin {
     transition: border 0.3s ease;
 } */
+#esqueceuSenha{
+    cursor: pointer;
+}
+#novoUsuario{
+    cursor: pointer;
+}
 
 @media(width <= 1024px){
     .loginContainer{

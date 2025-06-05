@@ -142,6 +142,15 @@ function consultaCEP() {
         });
 }
 
+//alert ler mais
+// IDs devem ser únicos, mas se você tem vários elementos com o mesmo id (não recomendado), use querySelectorAll:
+const lerMaisElements = document.querySelectorAll('.lerMais');
+
+lerMaisElements.forEach(function(lerMais) {
+    lerMais.addEventListener('click', function() {
+        alert('Em breve, mais informações sobre o tema!');
+    });
+});
 
 
 

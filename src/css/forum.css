@@ -34,4 +34,5 @@
     text-align: end;
     text-decoration: none;
     color: var(--color-letraPreta);
+    cursor: pointer;
 }

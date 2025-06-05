@@ -20,47 +20,14 @@ const formLogin = document.getElementById('login');
 
 });
 
+const novoUsuario = document.getElementById('novoUsuario');
 
+novoUsuario.addEventListener('click', function(){
+    alert('Em desenvolvimento! Ainda não estamos adicionando novos usuários.'); // Alerta informando que a funcionalidade está em desenvolvimento
+});
 
+const esqueceuSenha = document.getElementById('esqueceuSenha');
 
-// const loginBtn = document.getElementById('buttonLogin');
-// const usuario = document.getElementById('usuario').value.trim();
-// const senha = document.getElementById('senha').value.trim();
-
-// loginBtn.addEventListener('click', function(e) {
-//     if (usuario == '' || senha == '') {
-//         if (usuario === '') {
-//             document.getElementById('usuario').style.border = '2px solid red';
-//             document.getElementById('usuario').placeholder = 'Campo obrigatório!';
-//         }
-//         if (senha === '') {
-//             document.getElementById('senha').style.border = '2px solid red';
-//             document.getElementById('senha').placeholder = 'Campo obrigatório!';
-//         }
-//         alert('Por favor, preencha usuário e senha.');
-//     } else {
-//         // Redireciona corretamente para a página home.html
-//         window.location.assign('src/pages/home.html');
-//         alert('Login realizado com sucesso!');
-//     }
-// });
-
-// // Adiciona validação em tempo real nos campos
-// const usuarioInput = document.getElementById('usuario');
-// const senhaInput = document.getElementById('senha');
-// if (usuarioInput) {
-//     usuarioInput.addEventListener('input', function() {
-//         if (this.value.trim() !== '') {
-//             this.style.border = '';
-//             this.placeholder = 'Usuário';
-//         }
-//     });
-// }
-// if (senhaInput) {
-//     senhaInput.addEventListener('input', function() {
-//         if (this.value.trim() !== '') {
-//             this.style.border = '';
-//             this.placeholder = 'Senha';
-//     }
-//     });
-// }
+esqueceuSenha.addEventListener('click', function(){
+    alert('Usuário: admin \n senha:123456')
+});
