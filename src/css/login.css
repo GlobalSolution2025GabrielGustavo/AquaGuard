@@ -106,10 +106,20 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .apresentacao{
         display: flex;
         align-items: center;
         text-align: center;
+        justify-content: center;
+    }
+    .mensagemPrincipal{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15vh;
+        padding: 30px 40px;
     }
 }

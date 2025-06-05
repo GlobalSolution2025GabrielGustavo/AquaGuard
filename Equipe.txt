@@ -1,0 +1,13 @@
+RM:565191 Nome: Gabriel Akira
+RM:561820 Nome: Gustavo Santos
+
+link do Repositório do GitHub: https://github.com/GlobalSolution2025GabrielGustavo/AquaGuard.git
+
+
+
+Comentários importantes:
+pages/matematica.html; js/matematica.js; css/matematica.css; Fazem parte da máteria de Differentiated Problem Solving
+
+SlideShow se encontra em pages/informacoes.html
+Quiz se encotra em pages.quiz.html
+
