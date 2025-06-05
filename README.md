@@ -1,8 +1,3 @@
-Claro! Aqui está o conteúdo formatado como um arquivo `README.md`, com seções organizadas, cabeçalhos adequados, listas e blocos de código quando necessário:
-
----
-
-```markdown
 # 🌊 AquaGuard
 
 ## 📝 Visão Geral do Projeto
@@ -288,6 +283,4 @@ Este projeto está licenciado sob a licença **MIT** - veja o arquivo [LICENSE](
 Acreditamos que **tecnologia e prevenção salvam vidas**. O AquaGuard é mais que um projeto acadêmico — é uma solução real para um problema que afeta milhões de brasileiros todos os anos.
 
 **Junte-se a nós nessa missão! 🌍**
-
-```
 
