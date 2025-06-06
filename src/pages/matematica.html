@@ -293,7 +293,47 @@
                     <p>precipitação = A·(dia)⁴ + B·(dia)³ + C·(dia)² + D·(dia) + E</p>
                 </div>
                 <p class="cabecalho">Onde: A, B, C, D, E são números ajustados pelo computador, (dia) é o dia do ano (de 1 a 45 no exemplo)</p>
+                <h2 class="marginTop">A, B, C, D, E são os coeficientes da função polinomial ajustada ao gráfico de chuva.</h2>
+                <p class="marginPtop">Eles são os "pesos" que determinam o formato da curva da linha roxa (o modelo de previsão). Vamos ver o papel de cada um:</p>
+                <table class="marginPtop" border="1" cellpadding="8" cellspacing="0">
+                    <thead>
+                        <tr>
+                        <th>Coeficiente</th>
+                        <th>Significado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><strong>A</strong></td>
+                        <td>Controla a influência da potência <strong>dia⁴</strong> – responsável por grandes curvas ou oscilações no modelo, principalmente nas pontas do gráfico.</td>
+                        </tr>
+                        <tr>
+                        <td><strong>B</strong></td>
+                        <td>Define a parte cúbica <strong>dia³</strong>, contribuindo para mudanças mais complexas na tendência da curva.</td>
+                        </tr>
+                        <tr>
+                        <td><strong>C</strong></td>
+                        <td>Afeta a curvatura geral com a potência <strong>dia²</strong> – influencia se a curva sobe ou desce suavemente.</td>
+                        </tr>
+                        <tr>
+                        <td><strong>D</strong></td>
+                        <td>É o termo linear <strong>dia¹</strong> – define a inclinação básica da linha ao longo dos dias.</td>
+                        </tr>
+                        <tr>
+                        <td><strong>E</strong></td>
+                        <td>É o termo constante – representa o ponto de partida da curva, ou seja, a precipitação estimada no início.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
+            <h2 class="marginTop">Exemplo Visual (Analogia com uma estrada):</h2>
+            <ul>
+                <li>A: Se for muito grande, a estrada faz voltas bem acentuadas nos extremos.</li>
+                <li>B: Dá uma ou duas curvas grandes na estrada.</li>
+                <li>C: Coloca uma colina ou vale suave no meio.</li>
+                <li>D: Inclina a estrada para cima ou para baixo de forma uniforme.</li>
+                <li>E: É o nível inicial da estrada (altura da estrada no começo).</li>
+            </ul>
         </section>
         <section class="matematicaMensagemFinal">
             <p class="paragrafo">Obrigado, por vir até aqui, caso queira saber mais, nosso contanto ce localiza no final da página</p>
