@@ -41,6 +41,8 @@
 }
 .sobreNos__contato__imagemPessoal{
     width: 70px;
+    border-radius: 100px;
+    border: 2px solid black;
 }
 
 @media(width <= 1024px){
